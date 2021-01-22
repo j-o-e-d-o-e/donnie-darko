@@ -12,11 +12,11 @@
 </body>
 <script>
     function main() {
-        if (date < finale) {
-            document.getElementById("day").innerHTML = current();
-            document.getElementById("days-remaining").innerHTML = remaining();
+        if (date > finale) {
+            document.getElementById("day").innerHTML = current() + " 2021";
+            document.getElementById("days-remaining").innerHTML = "(" + remaining() + " DAYS REMAIN)";
         } else {
-            document.getElementById("day").innerHTML = "Vessel arrived.";
+            document.getElementById("day").innerHTML = "Vessel returned.";
         }
     }
 </script>

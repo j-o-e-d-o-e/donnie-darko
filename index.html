@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="index.js"></script>
+    <title>Donnie's countdown</title>
+</head>
+<body onload="main()">
+<div id="day"></div>
+<div id="days-remaining"></div>
+</body>
+<script>
+    function main() {
+        if (date < finale) {
+            document.getElementById("day").innerHTML = current();
+            document.getElementById("days-remaining").innerHTML = remaining();
+        } else {
+            document.getElementById("day").innerHTML = "Vessel arrived.";
+        }
+    }
+</script>
+</html>

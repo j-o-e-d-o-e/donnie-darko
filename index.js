@@ -1,4 +1,4 @@
-const finale = new Date(2021, 3, 4, 0,0, 0);
+const finale = new Date(2021, 3, 4, 0, 0, 0);
 const msg_f = "VmVzc2VsIHJldHVybmVkLgo="
 const months = ["January", "February", "March", "April"];
 const date = new Date();
@@ -12,6 +12,6 @@ function remaining() {
     return Math.round(Math.abs((finale - date) / (24 * 60 * 60 * 1000)));
 }
 
-function msg(){
+function msg() {
     return window.atob(msg_f);
 }
